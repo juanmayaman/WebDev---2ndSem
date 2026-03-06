@@ -5,60 +5,170 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <title>John Rich Nicolas</title>
+    <title>John Rich Nicolas — Web Developer</title>
 </head>
-<body style=
-        "font-family: Poppins, sans-serif;
-        background:#050301;
-        color: #f0f0f0;">
-    <div class="d-flex justify-content-center" style="margin-top:30px;">
+<body style="
+    font-family: Poppins, sans-serif;
+    background: #050301;
+    color: #f0f0f0;">
+
+    <!-- Navigation -->
+    <div class="d-flex justify-content-center" style="margin-top: 30px;">
         <nav style="
-                display: flex; 
-                justify-content: center; 
-                align-items: center; 
-                background-color: #1a1a1a;
-                padding:10px 40px; 
-                border-radius: 15px; 
-                box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-                margin-bottom:20px;
-            ">
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #1a1a1a;
+            padding: 10px 40px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            margin-bottom: 20px;">
             <ul class="d-flex gap-4 list-unstyled mb-0">
-            <li><a href="#home" class="text-white fs-4 text-decoration-none"><i class="bi bi-house"></i></a></li>
-            <li><a href="#projects" class="text-white fs-4 text-decoration-none"><i class="bi bi-folder"></i></a></li>
-            <li><a href="#exp" class="text-white fs-4 text-decoration-none"><i class="bi bi-briefcase"></i></a></li>
-            <li><a href="#contact" class="text-white fs-4 text-decoration-none"><i class="bi bi-envelope"></i></a></li>
+                <li><a href="#home"    class="text-white fs-4 text-decoration-none"><i class="bi bi-house"></i></a></li>
+                <li><a href="#projects" class="text-white fs-4 text-decoration-none"><i class="bi bi-folder"></i></a></li>
+                <li><a href="#exp"     class="text-white fs-4 text-decoration-none"><i class="bi bi-briefcase"></i></a></li>
+                <li><a href="#contact" class="text-white fs-4 text-decoration-none"><i class="bi bi-envelope"></i></a></li>
             </ul>
         </nav>
     </div>
-    <header>
-            <div style="
-            display: flex;
-            justify-content: center;
-            align-items: center; 
-            gap: 20px;           
-            margin-top: 30px;
-        ">
-            <img src="../images/unnamed.jpg" 
-                alt="Profile Picture" 
-                style="
-                    width: 150px; 
-                    height: 150px; 
-                    object-fit: cover; 
-                    object-position: top; 
-                    border: 3px solid #1a1a1a; 
-                    border-radius: 5px; 
-                ">
-            <div style="display: flex; flex-direction: column;">
-                <h1 style="margin:0;">John Rich Nicolas</h1>
-                <p style="margin:2px 0;"><i class="bi bi-geo-alt"></i> Manila, Philippines</p>
-                <p style="margin:2px 0;">ASP.NET Developer | Web Developer | Student</p>
-            </div>
 
-            <div>
+    <!-- Hero / Header -->
+    <header id="home" style="
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        margin-top: 30px;">
 
-            </div>
+        <img src="../images/unnamed.jpg"
+            alt="Profile Picture"
+            style="
+                width: 150px;
+                height: 150px;
+                object-fit: cover;
+                object-position: 20% 20%;
+                border: 3px solid #1a1a1a;
+                border-radius: 5px;">
+
+        <div style="display: flex; flex-direction: column;">
+            <h1 style="margin: 0;">John Rich Nicolas</h1>
+            <p style="margin: 2px 0;"><i class="bi bi-geo-alt"></i> Manila, Philippines</p>
+            <p style="margin: 2px 0;">ASP.NET Developer | Web Developer | Student</p>
         </div>
-        
     </header>
+
+    <!-- Main Content -->
+    <main style="
+        max-width: 800px;
+        margin: 50px auto;
+        padding: 0 20px;">
+
+        <!-- About Section -->
+        <section id="about" style="margin-bottom: 50px;">
+            <h2 style="border-bottom: 1px solid #333; padding-bottom: 8px;">About Me</h2>
+            <p>
+                Hi! I'm John Rich, a passionate web developer and student based in Manila.
+                I enjoy building clean, functional web applications and am always looking to
+                learn new technologies and sharpen my skills.
+            </p>
+            <p>
+                I specialize in ASP.NET and enjoy working on projects that challenge me to grow as a developer. When I'm not coding, I like to study skills related to data analytics.
+            </p>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" style="margin-bottom: 50px;">
+            <h2 style="border-bottom: 1px solid #333; padding-bottom: 8px;">Skills</h2>
+            <p>Here are the core technologies and tools I work with:</p>
+
+            <ul style="line-height: 2;">
+                <li>HTML &amp; CSS</li>
+                <li>JavaScript</li>
+                <li>
+                    ASP.NET (C#)
+                    <ul style="margin-top: 4px; color: #aaaaaa;">
+                        <li>ASP.NET Core MVC</li>
+                        <li>Entity Framework</li>
+                        <li>Razor Pages</li>
+                    </ul>
+                </li>
+                <li>Bootstrap</li>
+                <li>SQL Server</li>
+                <li>Git &amp; GitHub</li>
+            </ul>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" style="margin-bottom: 50px;">
+            <h2 style="border-bottom: 1px solid #333; padding-bottom: 8px;">Projects</h2>
+            <p>A selection of projects I've built or contributed to:</p>
+
+            <ol style="line-height: 2.2;">
+                <li>
+                    <h3 style="margin: 0; display: inline;">Student Portal System</h3>
+                    <p style="margin: 2px 0 8px 0; color: #aaaaaa;">
+                        A full-stack web app built with ASP.NET Core for managing student records,
+                        grades, and enrollment — featuring role-based authentication.
+                    </p>
+                </li>
+                <li>
+                    <h3 style="margin: 0; display: inline;">Personal Budget Tracker</h3>
+                    <p style="margin: 2px 0 8px 0; color: #aaaaaa;">
+                        A responsive dashboard for tracking income and expenses, built with
+                        vanilla JavaScript and localStorage.
+                    </p>
+                </li>
+                <li>
+                    <h3 style="margin: 0; display: inline;">Portfolio Website</h3>
+                    <p style="margin: 2px 0 8px 0; color: #aaaaaa;">
+                        This page! A hand-coded HTML/CSS portfolio showcasing my background,
+                        skills, and work.
+                    </p>
+                </li>
+            </ol>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="exp" style="margin-bottom: 50px;">
+            <h2 style="border-bottom: 1px solid #333; padding-bottom: 8px;">Experience</h2>
+            <p>My background and training so far:</p>
+
+            <ul style="line-height: 2;">
+                <li>
+                    <strong>Web Development Intern</strong> — ABC Tech Solutions (2024)
+                </li>
+                <li>
+                    <strong>Freelance Web Developer</strong> — Various Clients (2023–Present)
+                </li>
+                <li>
+                    <strong>BS Information Technology</strong> — Currently enrolled, Manila
+                </li>
+            </ul>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" style="margin-bottom: 50px;">
+            <h2 style="border-bottom: 1px solid #333; padding-bottom: 8px;">Contact</h2>
+            <p>Feel free to reach out through any of the channels below:</p>
+
+            <ul style="list-style: none; padding: 0; line-height: 2.2;">
+                <li><i class="bi bi-envelope"></i> &nbsp;johnrichnicolas@gmail.com</li>
+                <li><i class="bi bi-github"></i> &nbsp;https://github.com/juanmayaman</li>
+                <li><i class="bi bi-linkedin"></i> &nbsp;https://www.linkedin.com/in/john-rich-nicolas/</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer style="
+        text-align: center;
+        padding: 20px;
+        border-top: 1px solid #1a1a1a;
+        color: #555555;
+        font-size: 0.85rem;">
+        <p>&copy; 2025 John Rich Nicolas. All rights reserved.</p>
+    </footer>
+
 </body>
 </html>
