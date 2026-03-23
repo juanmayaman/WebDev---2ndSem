@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Projects — John Rich Nicolas</title>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <div class="nav-wrapper">
+        <nav class="nav-pill">
+            <ul>
+                <li><a href="index.html" title="Home"><i class="bi bi-house"></i></a></li>
+                <li><a href="projects.html" class="active" title="Projects"><i class="bi bi-folder"></i></a></li>
+                <li><a href="index.html#exp" title="Experience"><i class="bi bi-briefcase"></i></a></li>
+                <li><a href="index.html#contact" title="Contact"><i class="bi bi-envelope"></i></a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Page Header -->
+    <div class="page-header">
+        <h1>Projects</h1>
+        <p>Academic and personal work by John Rich Nicolas</p>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+
+        <section id="all-projects">
+            <h2>All Projects</h2>
+            <p>
+                A complete list of projects I've built or contributed to, ranging from full-stack
+                web systems to algorithm-based tools.
+            </p>
+
+            <ol>
+                <li class="project-item">
+                    <h3>Iskolar Alert: Incident Reporting &amp; Lost and Found System</h3>
+                    <p class="project-meta">
+                        Team Project | C#, ASP.NET Core, Entity Framework Core, Azure SQL Database, Bootstrap
+                    </p>
+                    <p class="project-desc">
+                        Developed a web-based incident reporting and lost &amp; found management system for university use.
+                        Implemented async CRUD services with Entity Framework Core, advanced search with LINQ filtering,
+                        and secure file upload handling using GUID-based naming. Built authentication with BCrypt hashing,
+                        claims-based authorization, and role-based access control (Student/Admin).
+                    </p>
+                </li>
+
+                <li class="project-item">
+                    <h3>KwentoFlow</h3>
+                    <p class="project-meta">
+                        Team Project | TypeScript, React, Node.js, Express, PDFKit
+                    </p>
+                    <p class="project-desc">
+                        Developed a web application integrating a lexical analyzer and parser with a React frontend and
+                        Express REST API. Implemented endpoints for real-time syntax analysis and transformed compiler
+                        outputs (tokens, AST, syntax errors) into structured JSON for visualization. Added PDF export
+                        functionality using PDFKit to generate downloadable analysis reports.
+                    </p>
+                </li>
+
+                <li class="project-item">
+                    <h3>PUPunta – Campus Route Finder</h3>
+                    <p class="project-meta">
+                        Team Project | JavaScript, HTML5, CSS3, Dijkstra's Algorithm
+                    </p>
+                    <p class="project-desc">
+                        Built a web-based navigation system for the PUP Sta. Mesa campus that calculates the shortest
+                        path between buildings and facilities. Implemented a custom Dijkstra's algorithm with support
+                        for floor transitions, stair preferences, and penalty-based routing. Designed modular JavaScript
+                        components for graph modeling, node-edge relationships, and dynamic map visualization.
+                    </p>
+                </li>
+
+                <li class="project-item">
+                    <h3>Fake News Detector using Multihead Turing Machine</h3>
+                    <p class="project-meta">
+                        Team Project | C#, Automata Theory, Rule-Based Text Analysis
+                    </p>
+                    <p class="project-desc">
+                        Designed and implemented a rule-based fake news detection system using a Multihead Turing Machine
+                        architecture to analyze short-form Facebook posts. The system processes text through three
+                        parallel detection heads analyzing emotional/lexical cues, structural punctuation patterns,
+                        and phrase repetition. Implemented deterministic state transitions and a weighted scoring model
+                        to classify posts as <strong>CREDIBLE</strong> or <strong>SUSPICIOUS</strong>, providing interpretable
+                        explanations and confidence scores for detected linguistic patterns.
+                    </p>
+                </li>
+            </ol>
+        </section>
+
+        <!-- Back link -->
+        <section id="back">
+            <h2>Back</h2>
+            <p>Return to the main page to learn more about me.</p>
+            <ul class="contact-list">
+                <li><a href="index.html" class="view-all-link">← Back to Home</a></li>
+                <li><a href="index.html#contact" class="view-all-link">← Go to Contact</a></li>
+            </ul>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 John Rich Nicolas. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
