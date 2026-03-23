@@ -5,88 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
     <title>John Rich Nicolas — Web Developer</title>
 </head>
-<body style="
-    font-family: Poppins, sans-serif;
-    background: #050301;
-    color: #f0f0f0;">
+<body>
 
     <!-- Navigation -->
-    <div class="d-flex justify-content-center" style="margin-top: 30px;">
-        <nav style="
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #1a1a1a;
-            padding: 10px 40px;
-            border-radius: 15px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-            margin-bottom: 20px;">
-            <ul class="d-flex gap-4 list-unstyled mb-0">
-                <li><a href="#home"    class="text-white fs-4 text-decoration-none"><i class="bi bi-house"></i></a></li>
-                <li><a href="#projects" class="text-white fs-4 text-decoration-none"><i class="bi bi-folder"></i></a></li>
-                <li><a href="#exp"     class="text-white fs-4 text-decoration-none"><i class="bi bi-briefcase"></i></a></li>
-                <li><a href="#contact" class="text-white fs-4 text-decoration-none"><i class="bi bi-envelope"></i></a></li>
+    <div class="nav-wrapper">
+        <nav class="nav-pill">
+            <ul>
+                <li><a href="index.html" class="active" title="Home"><i class="bi bi-house"></i></a></li>
+                <li><a href="projects.html" title="Projects"><i class="bi bi-folder"></i></a></li>
+                <li><a href="index.html#exp" title="Experience"><i class="bi bi-briefcase"></i></a></li>
+                <li><a href="index.html#contact" title="Contact"><i class="bi bi-envelope"></i></a></li>
             </ul>
         </nav>
     </div>
 
     <!-- Hero / Header -->
-    <header id="home" style="
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
-        margin-top: 30px;">
+    <header id="home" class="hero">
+        <img src="images/unnamed.jpg"
+            alt="Profile Picture of John Rich Nicolas"
+            class="hero-photo">
 
-        <img src="../images/unnamed.jpg"
-            alt="Profile Picture"
-            style="
-                width: 150px;
-                height: 150px;
-                object-fit: cover;
-                object-position: 20% 20%;
-                border: 3px solid #1a1a1a;
-                border-radius: 5px;">
-
-        <div style="display: flex; flex-direction: column;">
-            <h1 style="margin: 0;">John Rich Nicolas</h1>
-            <p style="margin: 2px 0;"><i class="bi bi-geo-alt"></i> Marikina, Philippines</p>
-            <p style="margin: 2px 0;">ASP.NET Developer | Web Developer | Student</p>
+        <div class="hero-info">
+            <h1>John Rich Nicolas</h1>
+            <p><i class="bi bi-geo-alt"></i> Marikina, Philippines</p>
+            <p>ASP.NET Developer | Web Developer | Student</p>
         </div>
     </header>
 
     <!-- Main Content -->
-    <main style="
-        max-width: 800px;
-        margin: 50px auto;
-        padding: 0 20px;">
+    <main>
 
         <!-- About Section -->
-        <section id="about" style="margin-bottom: 50px;">
-            <h2 style="border-bottom: 1px solid #333; padding-bottom: 8px;">About Me</h2>
+        <section id="about">
+            <h2>About Me</h2>
             <p>
                 Hi! I'm John Rich, a passionate web developer and student based in Marikina.
                 I enjoy building clean, functional web applications and am always looking to
                 learn new technologies and sharpen my skills.
             </p>
             <p>
-                I specialize in ASP.NET and enjoy working on projects that challenge me to grow as a developer. When I'm not coding, I like to study skills related to data analytics.
+                I specialize in ASP.NET and enjoy working on projects that challenge me to grow
+                as a developer. When I'm not coding, I like to study skills related to data analytics.
             </p>
         </section>
 
-        <!-- Skills Section -->
-        <section id="skills" style="margin-bottom: 50px;">
-            <h2 style="border-bottom: 1px solid #333; padding-bottom: 8px;">Skills</h2>
+        <!-- Skills Section — unordered list (ul) with nested list -->
+        <section id="skills">
+            <h2>Skills</h2>
             <p>Here are the core technologies and tools I work with:</p>
 
-            <ul style="line-height: 2;">
+            <ul>
                 <li>HTML &amp; CSS</li>
                 <li>JavaScript</li>
                 <li>
                     ASP.NET (C#)
-                    <ul style="margin-top: 4px; color: #aaaaaa;">
+                    <!-- Nested list -->
+                    <ul>
                         <li>ASP.NET Core MVC</li>
                         <li>Entity Framework</li>
                         <li>Razor Pages</li>
@@ -98,91 +75,55 @@
             </ul>
         </section>
 
-        <!-- Projects Section -->
-        <section id="projects" style="margin-bottom: 50px;">
-            <h2 style="border-bottom: 1px solid #333; padding-bottom: 8px;">Projects</h2>
-            <p>A selection of academic and personal projects I have worked on:</p>
+        <!-- Projects Preview Section — links to projects.html -->
+        <section id="projects">
+            <h2>Projects</h2>
+            <p>A selection of academic and personal projects I have worked on.</p>
 
-            <ol style="line-height: 1.8;">
-
-                <li style="margin-bottom: 20px;">
-                    <h3 style="margin: 0;">Iskolar Alert: Incident Reporting & Lost and Found System</h3>
-                    <p style="margin: 2px 0 8px 0; color:#aaaaaa;">
-                        Team Project | C#, ASP.NET Core, Entity Framework Core, Azure SQL Database, Bootstrap
-                    </p>
-                    <p style="margin:0;">
-                        Developed a web-based incident reporting and lost & found management system for university use.
-                        Implemented async CRUD services with Entity Framework Core, advanced search with LINQ filtering,
-                        and secure file upload handling using GUID-based naming. Built authentication with BCrypt hashing,
-                        claims-based authorization, and role-based access control (Student/Admin).
+            <ol>
+                <li class="project-item">
+                    <h3>Iskolar Alert: Incident Reporting &amp; Lost and Found System</h3>
+                    <p class="project-meta">Team Project | C#, ASP.NET Core, Entity Framework Core, Azure SQL</p>
+                    <p class="project-desc">
+                        A web-based incident reporting and lost &amp; found management system for university use,
+                        featuring role-based access control and secure file upload handling.
                     </p>
                 </li>
-
-                <li style="margin-bottom: 20px;">
-                    <h3 style="margin: 0;">KwentoFlow</h3>
-                    <p style="margin: 2px 0 8px 0; color:#aaaaaa;">
-                        Team Project | TypeScript, React, Node.js, Express, PDFKit
-                    </p>
-                    <p style="margin:0;">
-                        Developed a web application integrating a lexical analyzer and parser with a React frontend and
-                        Express REST API. Implemented endpoints for real-time syntax analysis and transformed compiler
-                        outputs (tokens, AST, syntax errors) into structured JSON for visualization. Added PDF export
-                        functionality using PDFKit to generate downloadable analysis reports.
+                <li class="project-item">
+                    <h3>KwentoFlow</h3>
+                    <p class="project-meta">Team Project | TypeScript, React, Node.js, Express, PDFKit</p>
+                    <p class="project-desc">
+                        A web application integrating a lexical analyzer and parser with a React frontend
+                        and Express REST API, with PDF export for analysis reports.
                     </p>
                 </li>
-
-                <li style="margin-bottom: 20px;">
-                    <h3 style="margin: 0;">PUPunta – Campus Route Finder</h3>
-                    <p style="margin: 2px 0 8px 0; color:#aaaaaa;">
-                        Team Project | JavaScript, HTML5, CSS3, Dijkstra’s Algorithm
-                    </p>
-                    <p style="margin:0;">
-                        Built a web-based navigation system for the PUP Sta. Mesa campus that calculates the shortest
-                        path between buildings and facilities. Implemented a custom Dijkstra’s algorithm with support
-                        for floor transitions, stair preferences, and penalty-based routing. Designed modular JavaScript
-                        components for graph modeling, node-edge relationships, and dynamic map visualization.
-                    </p>
-                </li>
-
-                <li>
-                    <h3 style="margin: 0;">Fake News Detector using Multihead Turing Machine</h3>
-                    <p style="margin: 2px 0 8px 0; color:#aaaaaa;">
-                        Team Project | C#, Automata Theory, Rule-Based Text Analysis
-                    </p>
-                    <p style="margin:0;">
-                        Designed and implemented a rule-based fake news detection system using a Multihead Turing Machine
-                        architecture to analyze short-form Facebook posts. The system processes text through three
-                        parallel detection heads analyzing emotional/lexical cues, structural punctuation patterns,
-                        and phrase repetition. Implemented deterministic state transitions and a weighted scoring model
-                        to classify posts as <strong>CREDIBLE</strong> or <strong>SUSPICIOUS</strong>, providing interpretable
-                        explanations and confidence scores for detected linguistic patterns.
-                    </p>
-                </li>
-
             </ol>
+
+            <a href="projects.html" class="view-all-link">View all projects →</a>
         </section>
 
         <!-- Experience Section -->
-        <section id="exp" style="margin-bottom: 50px;">
-            <h2 style="border-bottom: 1px solid #333; padding-bottom: 8px;">Experience</h2>
+        <section id="exp">
+            <h2>Experience</h2>
             <p>My background and training so far:</p>
 
-            <ul style="line-height: 2;">
+            <ul>
                 <li>
                     <strong>IT Specialist Intern</strong> — La Pasion Solutions (March 2026)
                 </li>
                 <li>
-                    <strong>BS Computer Science </strong> — Currently enrolled, Polytechnic University of the Philippines (2023–Present)
+                    <strong>BS Computer Science</strong> — Currently enrolled,
+                    Polytechnic University of the Philippines (2023–Present)
                 </li>
             </ul>
         </section>
 
         <!-- Contact Section -->
-        <section id="contact" style="margin-bottom: 50px;">
-            <h2 style="border-bottom: 1px solid #333; padding-bottom: 8px;">Contact</h2>
+        <section id="contact">
+            <h2>Contact</h2>
             <p>Feel free to reach out through any of the channels below:</p>
 
-            <ul style="list-style: none; padding: 0; line-height: 2.2;">
+            <ul class="contact-list">
                 <li><i class="bi bi-envelope"></i> &nbsp;johnrichnicolas@gmail.com</li>
                 <li><i class="bi bi-github"></i> &nbsp;https://github.com/juanmayaman</li>
                 <li><i class="bi bi-linkedin"></i> &nbsp;https://www.linkedin.com/in/john-rich-nicolas/</li>
@@ -192,12 +133,7 @@
     </main>
 
     <!-- Footer -->
-    <footer style="
-        text-align: center;
-        padding: 20px;
-        border-top: 1px solid #1a1a1a;
-        color: #555555;
-        font-size: 0.85rem;">
+    <footer>
         <p>&copy; 2025 John Rich Nicolas. All rights reserved.</p>
     </footer>
 
